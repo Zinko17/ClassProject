@@ -1,9 +1,8 @@
 class Armor:
 
     def __init__(self,name:str,size:int,weight:int,power:int,
-                 desc='',stamina=0,health=0,defense=0):
+                 stamina=0,health=0,defense=0):
         self.name = name
-        self.desc = desc
         self.size = size
         self.weight = weight
         self.power = power
