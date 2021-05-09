@@ -1,9 +1,9 @@
+import generate_person
 class Sword:
 
-    def __init__(self,name:str,size:int,weight:int,power:int,
-                 desc='',stamina=0,health=0,defense=0):
+    def __init__(self,name:str,size=0,weight=0,power=0,
+                 stamina=0,health=0,defense=0):
         self.name = name
-        self.desc = desc
         self.size = size
         self.weight = weight
         self.power = power
@@ -18,3 +18,5 @@ class Sword:
         elif type == 'legendary':
             self.power *= 1.7
         self.__sword_type = type
+
+
