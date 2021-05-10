@@ -62,7 +62,7 @@ armor_info_dict = {
 
 armor_database = []
 for index,names in enumerate(armor_info_dict['name']):
-    new_sword = weapon.Sword(name=names,
+    new_sword = armor.Armor(name=names,
                              size=sword_info_dict['size'][index],
                              weight=sword_info_dict['weight'][index],
                              power=sword_info_dict['power'][index],
@@ -70,6 +70,9 @@ for index,names in enumerate(armor_info_dict['name']):
                              health=sword_info_dict['health'][index],
                              defense=sword_info_dict['defense'][index])
     armor_database.append(new_sword)
+
+
+
 
 
 
