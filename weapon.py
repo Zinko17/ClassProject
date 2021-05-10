@@ -1,4 +1,3 @@
-import generate_person
 class Sword:
 
     def __init__(self,name:str,size=0,weight=0,power=0,
