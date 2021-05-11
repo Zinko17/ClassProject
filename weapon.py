@@ -19,3 +19,5 @@ class Sword:
         self.__sword_type = type
 
 
+    def __repr__(self):
+        return self.name
