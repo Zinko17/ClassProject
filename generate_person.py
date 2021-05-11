@@ -45,13 +45,14 @@ for index,names in enumerate(sword_info_dict['name']):
                              stamina=sword_info_dict['stamina'][index],
                              health=sword_info_dict['health'][index],
                              defense=sword_info_dict['defense'][index])
+    new_sword.sword_type(sword_info_dict['sword_type'][index])
     sword_database.append(new_sword)
 
 
 
 armor_info_dict = {
     'name':['leather', 'chain mall', 'metal', 'aluminium', 'steel'],
-    'sword_type':['rare','legendary','rare','legendary','normal'],
+    'armor_type':['rare','legendary','rare','legendary','normal'],
     'size':[random.randint(1,10) for i in range(5)],
     'weight':[random.randint(7,15) for i in range(5)],
     'power':[random.randint(0,20) for i in range(5)],
@@ -69,7 +70,7 @@ for index,names in enumerate(armor_info_dict['name']):
                              stamina=armor_info_dict['stamina'][index],
                              health=armor_info_dict['health'][index],
                              defense=armor_info_dict['defense'][index])
-
+    new_armor.armor_type((armor_info_dict['armor_type'][index]))
     armor_database.append(new_armor)
 
 
@@ -78,10 +79,13 @@ for index,per in enumerate(person_database):
     current_sword = sword_database[index]
     per.set_weapon(current_sword)
     per.set_armor(current_armor)
-    current_sword.sword_type('legendary')
 print(sword_database)
 print(armor_database)
 print(person_database[0].__dict__)
+
+
+for i in person_database:
+    print(i.__dict__)
 
 
 
