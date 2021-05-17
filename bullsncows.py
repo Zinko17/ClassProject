@@ -2,7 +2,7 @@ import random
 
 
 list1 = random.sample([0,1,2,3,4,5,6,7,8,9],4)
-# print(list1)
+print(list1)
 for i in range(5):
     list_input = list(input())
 
@@ -18,7 +18,6 @@ for i in range(5):
                 bulls_list.append(num)
             if index != index1 and value ==num and num not in bulls_list:
                 cows += 1
-
     if bulls == 4:
         print('WIN')
 
